@@ -27,23 +27,4 @@ function App() {
   );
 }
 
-{
-  /* We need a REACT-ROUTER */
-}
-
-
-{
-  /* localhost.com/ */
-}
-
-
-{
-  /* localhost/checkout*/
-}
-
-
-{
-  /* localhost/login*/
-}
-
 export default App;
