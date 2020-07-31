@@ -2,11 +2,12 @@ import React from 'react'
 import Product from './Product';
 import './Home.css';
 
+
 function Home() {
     return(
         <div className="home">
-            <img className="home__image" src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg" />
-
+            <img
+                className="home__image" src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg" alt=""/>
 
             {/** Product id, tittle, price, rating, image */}
             <div className="home__row">
@@ -53,10 +54,10 @@ function Home() {
             <div className="home__row">
             <Product
                     id="12321341"
-                    title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
+                    title="Samsung LC49RG90SSUXEN 49'Curved LED Gaming Monitor"
                     price={11.96}
                     rating={5}
-                    image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_B01,204,203,200_.jpg"
+                    image="https://images.samsung.com/is/image/samsung/es-curvo-lc49j890dkuxen-lc49j890dkuxen-frontblack-104369739?$PD_GALLERY_L_JPG$"
                 />
             </div>
 
