@@ -2,6 +2,7 @@ import React from 'react'
 import './Header.css';
 import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket'
 
 function Header() {
     return (
@@ -22,31 +23,39 @@ function Header() {
 
             { /* 3-links */}
             <div className="header__nav">
-            {/* 1st link */}
-            <Link to="/login" className="header__link">
-                <div className="header__option">
-                    <span className="header__optionLineOne">Hello Roberto</span>
-                    <span className="header__optionLineTwo">Sign In</span>
-                </div>
-            </Link>
+                {/* 1st link */}
+                <Link to="/login" className="header__link">
+                    <div className="header__option">
+                        <span className="header__optionLineOne">Hello Roberto</span>
+                        <span className="header__optionLineTwo">Sign In</span>
+                    </div>
+                </Link>
 
             {/* 2nd link */}
-            <Link to="/" className="header__link">
-                <div className="header__option">
-                    <span className="header__optionLineOne">Return</span>
-                    <span className="header__optionLineTwo">& Orders</span>
-                </div>
-            </Link>
+                <Link to="/" className="header__link">
+                    <div className="header__option">
+                        <span className="header__optionLineOne">Return</span>
+                        <span className="header__optionLineTwo">& Orders</span>
+                    </div>
+                </Link>
 
             {/* 3rd link */}
-            <Link to="/login" className="header__link">
-                <div className="header__option">
-                    <span className="header__optionLineOne">Your</span>
-                    <span className="header__optionLineTwo">Prime</span>
-                </div>
-            </Link>
+                <Link to="/login" className="header__link">
+                    <div className="header__option">
+                        <span className="header__optionLineOne">Your</span>
+                        <span className="header__optionLineTwo">Prime</span>
+                    </div>
+                </Link>
 
             {/* 4th link */}
+                <Link to="/checkout" className="header__link">
+                    <div className="header__optionBasket">
+                        {/** Shoppieng basket icon */}
+                        <ShoppingBasketIcon />
+                        {/** Number os items in the basket */}
+                        <span className="header__optionLineTwo header__basketCount">0</span>
+                    </div>
+                </Link>
             </div>
             { /* Shopping cart with number of items inside it*/}
         </nav>
