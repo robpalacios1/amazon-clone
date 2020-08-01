@@ -30,7 +30,7 @@ function Home() {
             <div className="home__row">
                 <Product
                     id="12321341"
-                    title="Samsung LC49RG90SSUXEN 49'Curved LED Gaming Monitor"
+                    title="YAMAY Smart Watch for Android and iOS Phone IP68 Waterproof, Fitness Tracker Watch with Heart Rate"
                     price={199.99}
                     rating={3}
                     image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
@@ -55,7 +55,7 @@ function Home() {
             <Product
                     id="12321341"
                     title="Samsung LC49RG90SSUXEN 49'Curved LED Gaming Monitor"
-                    price={11.96}
+                    price={990.99}
                     rating={5}
                     image="https://images.samsung.com/is/image/samsung/es-curvo-lc49j890dkuxen-lc49j890dkuxen-frontblack-104369739?$PD_GALLERY_L_JPG$"
                 />
