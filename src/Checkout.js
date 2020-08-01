@@ -46,4 +46,5 @@ function Checkout() {
     );
 }
 
+// react-currency-format
 export default Checkout
