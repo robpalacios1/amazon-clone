@@ -1,16 +1,5 @@
 export const initialState = {
-    cart: [
-        {
-            id: 12321341,
-            title:
-                "The Lean Startup: How Constant Innovation",
-            price: 11.96,
-            rating: 5,
-            image:
-                "https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_B01,204,203,200_.jpg"
-
-        },
-    ],
+    cart: [],
     user: null
 };
 
@@ -20,6 +9,11 @@ export const getCartTotal = (cart) =>
 const reducer = (state, action) => {
     console.log(action)
     switch(action.type) {
+        case "SET_USER":
+            return {
+                ...state,
+                user: action.user
+            }
         case 'ADD_TO_CART':
             // Logic for adding item to cart
             return {
